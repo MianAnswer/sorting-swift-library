@@ -1,8 +1,10 @@
 extension Array where Element == Int {
     mutating func Sort(_ type: SortingType) {
         switch type {
-            case .selection:
-                self.SelectionSort()
+        case .selection:
+            self.SelectionSort()
+        case .bubble:
+            self.BubbleSort()
         }
     }
 
