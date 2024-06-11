@@ -5,6 +5,8 @@ extension Array where Element == Int {
             self.SelectionSort()
         case .bubble:
             self.BubbleSort()
+        case .insertion:
+            self.InsertionSort()
         }
     }
 
