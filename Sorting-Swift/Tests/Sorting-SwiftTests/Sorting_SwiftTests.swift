@@ -25,4 +25,12 @@ final class Sorting_SwiftTests: XCTestCase {
 
         XCTAssertEqual(actual, expected, "Insertion Sort")
     }
+    
+    func testMergeSort() throws {
+        var actual: [Int] = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+        actual.Sort(.merge)
+        let expected: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        XCTAssertEqual(actual, expected, "Merge Sort")
+    }
 }

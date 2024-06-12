@@ -7,6 +7,8 @@ extension Array where Element == Int {
             self.BubbleSort()
         case .insertion:
             self.InsertionSort()
+        case .merge:
+            self.MergeSort()
         }
     }
 
