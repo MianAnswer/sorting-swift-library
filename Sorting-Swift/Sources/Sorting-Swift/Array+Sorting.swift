@@ -9,6 +9,8 @@ extension Array where Element == Int {
             self.InsertionSort()
         case .merge:
             self.MergeSort()
+        case .quick:
+            self.QuickSort()
         }
     }
 

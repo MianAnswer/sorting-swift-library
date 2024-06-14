@@ -3,4 +3,5 @@ internal enum SortingType {
     case bubble
     case insertion
     case merge
+    case quick
 }
