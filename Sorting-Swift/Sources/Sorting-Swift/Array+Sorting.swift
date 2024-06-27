@@ -11,6 +11,8 @@ extension Array where Element == Int {
             self.MergeSort()
         case .quick:
             self.QuickSort()
+        case .heap:
+            self.HeapSort()
         }
     }
 
