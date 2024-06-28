@@ -1,5 +1,9 @@
 extension Array where Element == Int {
     mutating func Sort(_ type: SortingType) {
+        guard !self.isEmpty else {
+            return
+        }
+        
         switch type {
         case .selection:
             self.SelectionSort()
@@ -13,6 +17,8 @@ extension Array where Element == Int {
             self.QuickSort()
         case .heap:
             self.HeapSort()
+        case .count:
+            self.CountSort()
         }
     }
 

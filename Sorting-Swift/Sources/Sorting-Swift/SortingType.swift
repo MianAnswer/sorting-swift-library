@@ -5,4 +5,5 @@ public enum SortingType {
     case merge
     case quick
     case heap
+    case count
 }

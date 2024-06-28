@@ -39,4 +39,9 @@ final class Sorting_SwiftTests: XCTestCase {
         actual.Sort(.heap)
         XCTAssertEqual(actual, expected, "Heap Sort")
     }
+    
+    func testCountSort() throws {
+        actual.Sort(.count)
+        XCTAssertEqual(actual, expected, "Count Sort")
+    }
 }
