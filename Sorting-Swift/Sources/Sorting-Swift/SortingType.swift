@@ -6,4 +6,5 @@ public enum SortingType {
     case quick
     case heap
     case count
+    case radix
 }

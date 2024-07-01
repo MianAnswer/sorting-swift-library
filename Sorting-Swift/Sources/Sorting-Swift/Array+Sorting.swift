@@ -19,6 +19,8 @@ extension Array where Element == Int {
             self.HeapSort()
         case .count:
             self.CountSort()
+        case .radix:
+            self.RadixSort()
         }
     }
 

@@ -44,4 +44,10 @@ final class Sorting_SwiftTests: XCTestCase {
         actual.Sort(.count)
         XCTAssertEqual(actual, expected, "Count Sort")
     }
+    
+    func testRadixSort() throws {
+        actual = [170, 45, 75, 90, 802, 24, 2, 66]
+        actual.Sort(.radix)
+        XCTAssertEqual(actual, [2, 24, 45, 66, 75, 90, 170, 802], "Radix Sort")
+    }
 }
