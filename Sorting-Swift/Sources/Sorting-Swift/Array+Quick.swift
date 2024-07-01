@@ -10,7 +10,7 @@ internal extension Array where Element == Int {
         
         let partitionIndex = Partition(start, end)
         QuickSort(start, partitionIndex - 1)
-        QuickSort(partitionIndex + 1, end)
+        QuickSort(partitionIndex, end)
     }
     
     fileprivate mutating func Partition(_ start: Int, _ end: Int) -> Int {
@@ -19,18 +19,15 @@ internal extension Array where Element == Int {
         var left = start
         var right = start + 1
         
-        while right < end {
+        while right <= end {
             if self[left] <= pivot {
                 left += 1
-            } else if self[right] < pivot {
+            } else if self[right] <= pivot {
                 swap(left, right)
                 left += 1
             }
 
             right += 1
-        }
-        if self[left] > pivot {
-            swap(left, end)
         }
         
         return left
